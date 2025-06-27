@@ -1,0 +1,110 @@
+/* --- AI-ANTIVIRUS: NEON SHIELD THEME --- */
+* {
+    font-family: "Segoe UI", "Helvetica Neue", "Arial", sans-serif;
+    color: #e0e1e9; /* Hafif Eflatun-Beyaz Yazı */
+    font-size: 14px;
+}
+QWidget {
+    background-color: #0b0d17; /* Derin Uzay Siyahı */
+}
+
+/* --- NAVİGASYON BARI --- */
+#navigationBar {
+    background-color: #1c1e2e;
+    border-right: 1px solid #3a2c5c;
+}
+#navButton {
+    border: none;
+    border-radius: 8px;
+    background-color: transparent;
+    padding: 10px;
+    color: #a0a0c0;
+    text-align: left;
+    font-weight: bold;
+}
+#navButton:hover {
+    background-color: #2c2e4a;
+    color: #ffffff;
+}
+#navButton:checked {
+    background-color: #9f50ff; /* Canlı Mor Vurgu */
+    color: white;
+}
+
+/* --- GENEL BUTONLAR --- */
+QPushButton {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #9f50ff;
+    padding: 10px 24px;
+    border-radius: 18px;
+    font-weight: bold;
+}
+QPushButton:hover {
+    background-color: #9f50ff;
+}
+QPushButton#runQuickScanButton {
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 23px;
+    background-color: #9f50ff;
+    border: none;
+}
+QPushButton#runQuickScanButton:hover {
+    background-color: #bf8fff;
+}
+
+/* --- METİN VE BAŞLIKLAR --- */
+QLabel#pageTitle {
+    font-size: 32px;
+    font-weight: 900;
+    color: #ffffff;
+    padding-bottom: 20px;
+}
+QLabel#statusCard_Title {
+    color: #a0a0c0;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+QLabel#statusCard_Value {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* --- DURUM KARTLARI (ANA PANEL) --- */
+QFrame#statusCard {
+    background-color: #1c1e2e;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* --- DİĞER BİLEŞENLER --- */
+QTableWidget, QTextEdit, QLineEdit, QSpinBox {
+    background-color: #1c1e2e;
+    border: 1px solid #3a2c5c;
+    border-radius: 6px;
+    padding: 8px;
+}
+QHeaderView::section {
+    background-color: #2c2e4a;
+    padding: 8px;
+    border: none;
+    font-weight: bold;
+}
+QScrollBar:vertical {
+    border: none;
+    background: #1c1e2e;
+    width: 10px;
+}
+QScrollBar::handle:vertical {
+    background: #4a4c6a;
+    min-height: 25px;
+    border-radius: 5px;
+}
+QToolTip {
+    background-color: #0b0d17;
+    color: #e0e1e9;
+    border: 1px solid #9f50ff;
+}

@@ -1,0 +1,3 @@
+C:/Users/Asus/Documents/repos/ai-antivirus/system-integration/build/CMakeFiles/system_integration.dir
+C:/Users/Asus/Documents/repos/ai-antivirus/system-integration/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Asus/Documents/repos/ai-antivirus/system-integration/build/CMakeFiles/ZERO_CHECK.dir

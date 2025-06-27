@@ -1,0 +1,23 @@
+signature_db = "config/signatures/virus-signatures.db"
+quarantine_dir = "C:/AIAV/quarantine"
+ai_endpoint = "http://127.0.0.1:8001"
+scan_threads = 4
+watch_dir = "C:/Users/Asus/Downloads"
+excluded_extensions = [
+    ".log",
+    ".meta",
+    ".tmp",
+]
+
+[web_security]
+blocklist_urls = [
+    "https://raw.githubusercontent.com/mitchellkrogza/The-Big-List-of-Hacked-Malware-Web-Sites/master/hosts",
+    "https://raw.githubusercontent.com/AdAway/adaway.github.io/master/hosts.txt",
+]
+user_whitelist = [
+    "github.com",
+    "google.com",
+]
+user_blacklist = ["https://chat.mistral.ai/chat"]
+enable_tracker_protection = false
+enable_malware_protection = false

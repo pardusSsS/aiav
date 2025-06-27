@@ -1,0 +1,46 @@
+pub mod scanner;
+pub mod quarantine;
+
+use crate::config::settings::Settings;
+use crate::engine::scanner::Scanner;
+use crate::engine::quarantine::{QuarantineManager, QuarantineStats};
+use anyhow::Result;
+use tracing::info;
+
+/// Engine koordinatörü: scanner ve quarantine yöneticilerini çalıştırır.
+pub struct Engine {
+    settings:   Settings,
+    scanner:    Scanner,
+    quarantine: QuarantineManager,
+}
+
+impl Engine {
+    /// Yeni Engine oluşturur ve gerekli bileşenleri başlatır.
+    pub async fn new(settings: Settings) -> Result<Self> {
+        let quarantine = QuarantineManager::new(&settings.quarantine_dir);
+        let scanner    = Scanner::new(settings.clone(), quarantine.clone()).await?;
+        Ok(Self { settings, scanner, quarantine })
+    }
+
+    /// Ana döngü: (şimdilik) 60 sn'de bir tarama.
+    pub async fn run(&mut self) -> Result<()> {
+        loop {
+            // Perform scan
+            info!("Starting periodic scan");
+            self.scanner.scan_path(&self.settings.signature_db).await?;
+            
+            // Wait for configured interval
+            tokio::time::sleep(std::time::Duration::from_secs(60)).await;
+        }
+    }
+
+    /// Gets quarantine statistics
+    pub fn get_quarantine_stats(&self) -> Result<QuarantineStats> {
+        self.quarantine.get_stats()
+    }
+
+    /// Updates settings
+    pub fn update_settings(&mut self, new_settings: Settings) {
+        self.settings = new_settings;
+    }
+}

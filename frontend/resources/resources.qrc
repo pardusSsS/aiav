@@ -1,0 +1,11 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource prefix="/">
+    <file>styles/dark_theme.qss</file>
+    <file>icons/overview.svg</file>
+    <file>icons/protection.svg</file>
+    <file>icons/scan.svg</file>
+    <file>icons/settings.svg</file>
+    <file>icons/shield_status.svg</file>
+    <file>icons/wifi.svg</file>
+</qresource>
+</RCC>

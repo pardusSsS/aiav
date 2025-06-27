@@ -1,0 +1,11 @@
+# Rust build output
+/target/
+
+# MSVC / Windows debug artefacts
+*.pdb
+*.rlib
+
+# Front-end derlenmiş çıktılar
+/frontend/build/
+
+/ai-engine/ember_data/
