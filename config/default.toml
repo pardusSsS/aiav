@@ -18,6 +18,9 @@ user_whitelist = [
     "github.com",
     "google.com",
 ]
-user_blacklist = ["https://chat.mistral.ai/chat"]
-enable_tracker_protection = false
-enable_malware_protection = false
+user_blacklist = [
+    "https://chat.mistral.ai/chat",
+    "https://blogger.googleusercontent.com/img/b",
+]
+enable_tracker_protection = true
+enable_malware_protection = true

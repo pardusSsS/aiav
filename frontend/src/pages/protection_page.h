@@ -3,19 +3,19 @@
 
 #include <QWidget>
 #include <QJsonDocument>
-#include <QJsonObject>   // ➜ m_currentSettings için
-#include <QJsonArray>
+#include <QJsonObject>
 
-// Gerekli sınıfların ön bildirimi
+// Gerekli sınıfların ön bildirimi (Forward declaration)
 QT_BEGIN_NAMESPACE
 class QPushButton;
 class QLabel;
 class QTextEdit;
 class QCheckBox;
+class QGroupBox;
 QT_END_NAMESPACE
 
 class ApiClient;
-class ShieldWidget; // Kendi özel kalkan widget'ımızı kullanacağız
+class ShieldWidget;
 
 class ProtectionPage : public QWidget
 {
@@ -24,22 +24,28 @@ public:
     explicit ProtectionPage(QWidget *parent = nullptr);
 
 private slots:
-    void onSaveClicked();
     void onSettingsReceived(bool success, const QJsonDocument& jsonData);
     void onSettingsSaved(bool success, const QString& message);
     void loadCurrentSettings();
+    
+    // DÜZELTME: Tüm yeni slotlar burada doğru şekilde beyan ediliyor.
+    void onMasterToggleChanged(bool checked);
+    void onSaveSettingsClicked();
+    void onWebStatusReceived(bool success, const QJsonDocument& jsonData);
+    void onWebProtectionToggled(bool success, const QString& message);
 
 private:
-    void connectSignals(); 
     void setupUI();
+    void connectSignals(); 
     void populateUI(const QJsonObject& settings);
     QJsonObject gatherDataFromUI();
-    // YENİ: Kalkanın ve metinlerin görünümünü güncelleyecek fonksiyon
-    void updateProtectionStatusVisuals(const QJsonObject& webSettings);
+    void updateProtectionStatusVisuals(bool isActive);
 
     // Arayüz Bileşenleri
-    ShieldWidget* m_shieldWidget; // YENİ: Durum kalkanı
-    QLabel* m_statusTextLabel;    // YENİ: "Aktif" / "Pasif" metni
+    ShieldWidget* m_shieldWidget;
+    QLabel* m_statusTextLabel;
+    QCheckBox* m_masterEnableToggle;
+    QGroupBox* m_settingsGroup;
     QCheckBox* m_malwareBlockToggle;
     QCheckBox* m_trackerBlockToggle;
     QTextEdit* m_whitelistEdit;

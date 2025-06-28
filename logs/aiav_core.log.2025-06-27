@@ -594,3 +594,142 @@
 {"timestamp":"2025-06-27T11:11:45.622617Z","level":"INFO","fields":{"message":"Scan starting...","file":"C:/Users/Asus/Downloads\\node-v22.17.0-x64.msi"},"target":"aiav_core::engine"}
 {"timestamp":"2025-06-27T11:11:45.695318Z","level":"INFO","fields":{"message":"File not in signature DB. Forwarding to AI engine for deep analysis...","file":"C:/Users/Asus/Downloads\\node-v22.17.0-x64.msi"},"target":"aiav_core::engine::scanner"}
 {"timestamp":"2025-06-27T11:11:47.742608Z","level":"WARN","fields":{"message":"Could not get a prediction from AI engine. Skipping AI scan.","error":"error sending request"},"target":"aiav_core::engine::scanner"}
+{"timestamp":"2025-06-27T17:10:53.080882Z","level":"INFO","fields":{"message":"AI-AV Core starting","settings":"Settings { signature_db: \"config/signatures/virus-signatures.db\", quarantine_dir: \"C:/AIAV/quarantine\", ai_endpoint: \"http://127.0.0.1:8001\", scan_threads: 4, watch_dir: \"C:/Users/Asus/Downloads\", excluded_extensions: [\".log\", \".meta\", \".tmp\"], web_security: WebSecuritySettings { blocklist_urls: [\"https://raw.githubusercontent.com/mitchellkrogza/The-Big-List-of-Hacked-Malware-Web-Sites/master/hosts\", \"https://raw.githubusercontent.com/AdAway/adaway.github.io/master/hosts.txt\"], user_whitelist: [\"github.com\", \"google.com\"], user_blacklist: [\"https://chat.mistral.ai/chat\"], enable_tracker_protection: false, enable_malware_protection: false } }"},"target":"aiav_core"}
+{"timestamp":"2025-06-27T17:10:53.082025Z","level":"INFO","fields":{"message":"Project root path identified as: C:\\Users\\Asus\\Documents\\repos\\ai-antivirus"},"target":"aiav_core::engine::scanner"}
+{"timestamp":"2025-06-27T17:10:53.083049Z","level":"INFO","fields":{"message":"Loaded 1 signatures from aof."},"target":"aiav_core::engine::scanner"}
+{"timestamp":"2025-06-27T17:10:53.083512Z","level":"INFO","fields":{"message":"Loading YARA rules from: C:\\Users\\Asus\\Documents\\repos\\ai-antivirus\\config/signatures/malware_patterns.yar"},"target":"aiav_core::engine::scanner"}
+{"timestamp":"2025-06-27T17:10:53.085287Z","level":"INFO","fields":{"message":"YARA rules loaded successfully."},"target":"aiav_core::engine::scanner"}
+{"timestamp":"2025-06-27T17:10:53.085534Z","level":"INFO","fields":{"message":"Starting API server on http://127.0.0.1:3000"},"target":"aiav_core"}
+{"timestamp":"2025-06-27T17:10:53.085840Z","level":"INFO","fields":{"message":"File watcher started for path: C:/Users/Asus/Downloads"},"target":"aiav_core::detection::watcher"}
+{"timestamp":"2025-06-27T17:10:53.085925Z","level":"INFO","fields":{"message":"🔁 Starting comprehensive scan on directory: C:/Users/Asus/Downloads"},"target":"aiav_core::engine"}
+{"timestamp":"2025-06-27T17:10:53.086034Z","level":"INFO","fields":{"message":"Real-time file watcher started in a background thread.","path":"C:/Users/Asus/Downloads"},"target":"aiav_core"}
+{"timestamp":"2025-06-27T17:10:53.086470Z","level":"INFO","fields":{"message":"Scan starting...","file":"C:/Users/Asus/Downloads\\node-v22.17.0-x64.msi"},"target":"aiav_core::engine"}
+{"timestamp":"2025-06-27T17:10:53.167866Z","level":"INFO","fields":{"message":"File not in signature DB. Forwarding to AI engine for deep analysis...","file":"C:/Users/Asus/Downloads\\node-v22.17.0-x64.msi"},"target":"aiav_core::engine::scanner"}
+{"timestamp":"2025-06-27T17:10:55.225041Z","level":"WARN","fields":{"message":"Could not get a prediction from AI engine. Skipping AI scan.","error":"error sending request"},"target":"aiav_core::engine::scanner"}
+{"timestamp":"2025-06-27T17:11:03.092696Z","level":"INFO","fields":{"message":"🔁 Starting comprehensive scan on directory: C:/Users/Asus/Downloads"},"target":"aiav_core::engine"}
+{"timestamp":"2025-06-27T17:11:03.093550Z","level":"INFO","fields":{"message":"Scan starting...","file":"C:/Users/Asus/Downloads\\node-v22.17.0-x64.msi"},"target":"aiav_core::engine"}
+{"timestamp":"2025-06-27T17:11:03.185010Z","level":"INFO","fields":{"message":"File not in signature DB. Forwarding to AI engine for deep analysis...","file":"C:/Users/Asus/Downloads\\node-v22.17.0-x64.msi"},"target":"aiav_core::engine::scanner"}
+{"timestamp":"2025-06-27T17:11:05.252910Z","level":"WARN","fields":{"message":"Could not get a prediction from AI engine. Skipping AI scan.","error":"error sending request"},"target":"aiav_core::engine::scanner"}
+{"timestamp":"2025-06-27T17:12:02.824246Z","level":"INFO","fields":{"message":"Settings updated and saved."},"target":"aiav_core::engine"}
+{"timestamp":"2025-06-27T17:12:02.826780Z","level":"INFO","fields":{"message":"Re-applying web protection with new settings..."},"target":"aiav_core::engine"}
+{"timestamp":"2025-06-27T17:12:02.827240Z","level":"INFO","fields":{"message":"Gathering and normalizing domains based on current settings..."},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:12:02.827922Z","level":"INFO","fields":{"message":"Cache for config/signatures/tracker_hosts.txt is stale; downloading from https://raw.githubusercontent.com/mitchellkrogza/The-Big-List-of-Hacked-Malware-Web-Sites/master/hosts"},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:12:03.280180Z","level":"INFO","fields":{"message":"Successfully updated local cache for config/signatures/tracker_hosts.txt"},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:12:03.297067Z","level":"INFO","fields":{"message":"Cache for config/signatures/tracker_hosts.txt is stale; downloading from https://raw.githubusercontent.com/AdAway/adaway.github.io/master/hosts.txt"},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:12:03.372024Z","level":"INFO","fields":{"message":"Successfully updated local cache for config/signatures/tracker_hosts.txt"},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:12:03.373058Z","level":"INFO","fields":{"message":"Malware protection is enabled. Loading malware lists."},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:12:03.373688Z","level":"INFO","fields":{"message":"Tracker protection is enabled. Loading tracker lists."},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:12:03.387265Z","level":"INFO","fields":{"message":"Total unique domains to block: 6543"},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:12:03.392979Z","level":"INFO","fields":{"message":"Hosts file updated successfully."},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:12:03.393492Z","level":"INFO","fields":{"message":"Flushing DNS cache..."},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:12:38.795026Z","level":"INFO","fields":{"message":"Settings updated and saved."},"target":"aiav_core::engine"}
+{"timestamp":"2025-06-27T17:12:38.799222Z","level":"INFO","fields":{"message":"Re-applying web protection with new settings..."},"target":"aiav_core::engine"}
+{"timestamp":"2025-06-27T17:12:38.799481Z","level":"INFO","fields":{"message":"Gathering and normalizing domains based on current settings..."},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:12:38.799734Z","level":"INFO","fields":{"message":"Cache for config/signatures/tracker_hosts.txt is stale; downloading from https://raw.githubusercontent.com/mitchellkrogza/The-Big-List-of-Hacked-Malware-Web-Sites/master/hosts"},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:12:38.891402Z","level":"INFO","fields":{"message":"Successfully updated local cache for config/signatures/tracker_hosts.txt"},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:12:38.901713Z","level":"INFO","fields":{"message":"Cache for config/signatures/tracker_hosts.txt is stale; downloading from https://raw.githubusercontent.com/AdAway/adaway.github.io/master/hosts.txt"},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:12:38.974557Z","level":"INFO","fields":{"message":"Successfully updated local cache for config/signatures/tracker_hosts.txt"},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:12:38.975063Z","level":"INFO","fields":{"message":"Total unique domains to block: 0"},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:12:38.975376Z","level":"INFO","fields":{"message":"Removing all custom blocks from hosts file."},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:12:38.981990Z","level":"INFO","fields":{"message":"Hosts file updated successfully."},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:12:38.982355Z","level":"INFO","fields":{"message":"Flushing DNS cache..."},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:16:43.012771Z","level":"INFO","fields":{"message":"Settings updated and saved."},"target":"aiav_core::engine"}
+{"timestamp":"2025-06-27T17:16:43.013182Z","level":"INFO","fields":{"message":"Re-applying web protection with new settings..."},"target":"aiav_core::engine"}
+{"timestamp":"2025-06-27T17:16:43.013428Z","level":"INFO","fields":{"message":"Gathering and normalizing domains based on current settings..."},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:16:43.013844Z","level":"INFO","fields":{"message":"Cache for config/signatures/tracker_hosts.txt is stale; downloading from https://raw.githubusercontent.com/mitchellkrogza/The-Big-List-of-Hacked-Malware-Web-Sites/master/hosts"},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:16:43.459342Z","level":"INFO","fields":{"message":"Successfully updated local cache for config/signatures/tracker_hosts.txt"},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:16:43.473182Z","level":"INFO","fields":{"message":"Cache for config/signatures/tracker_hosts.txt is stale; downloading from https://raw.githubusercontent.com/AdAway/adaway.github.io/master/hosts.txt"},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:16:43.551742Z","level":"INFO","fields":{"message":"Successfully updated local cache for config/signatures/tracker_hosts.txt"},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:16:43.552577Z","level":"INFO","fields":{"message":"Tracker protection is enabled. Loading tracker lists."},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:16:43.567801Z","level":"INFO","fields":{"message":"Total unique domains to block: 6542"},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:16:43.584487Z","level":"INFO","fields":{"message":"Hosts file updated successfully."},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:16:43.584866Z","level":"INFO","fields":{"message":"Flushing DNS cache..."},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:17:09.216633Z","level":"INFO","fields":{"message":"Settings updated and saved."},"target":"aiav_core::engine"}
+{"timestamp":"2025-06-27T17:17:09.217651Z","level":"INFO","fields":{"message":"Re-applying web protection with new settings..."},"target":"aiav_core::engine"}
+{"timestamp":"2025-06-27T17:17:09.217949Z","level":"INFO","fields":{"message":"Gathering and normalizing domains based on current settings..."},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:17:09.218262Z","level":"INFO","fields":{"message":"Cache for config/signatures/tracker_hosts.txt is stale; downloading from https://raw.githubusercontent.com/mitchellkrogza/The-Big-List-of-Hacked-Malware-Web-Sites/master/hosts"},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:17:09.328584Z","level":"INFO","fields":{"message":"Successfully updated local cache for config/signatures/tracker_hosts.txt"},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:17:09.347043Z","level":"INFO","fields":{"message":"Cache for config/signatures/tracker_hosts.txt is stale; downloading from https://raw.githubusercontent.com/AdAway/adaway.github.io/master/hosts.txt"},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:17:09.418946Z","level":"INFO","fields":{"message":"Successfully updated local cache for config/signatures/tracker_hosts.txt"},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:17:09.419263Z","level":"INFO","fields":{"message":"Malware protection is enabled. Loading malware lists."},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:17:09.419633Z","level":"INFO","fields":{"message":"Tracker protection is enabled. Loading tracker lists."},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:17:09.430123Z","level":"INFO","fields":{"message":"Total unique domains to block: 6544"},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:17:09.435343Z","level":"INFO","fields":{"message":"Hosts file updated successfully."},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:17:09.435689Z","level":"INFO","fields":{"message":"Flushing DNS cache..."},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:17:45.581704Z","level":"INFO","fields":{"message":"Settings updated and saved."},"target":"aiav_core::engine"}
+{"timestamp":"2025-06-27T17:17:45.581934Z","level":"INFO","fields":{"message":"Re-applying web protection with new settings..."},"target":"aiav_core::engine"}
+{"timestamp":"2025-06-27T17:17:45.582111Z","level":"INFO","fields":{"message":"Gathering and normalizing domains based on current settings..."},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:17:45.582359Z","level":"INFO","fields":{"message":"Cache for config/signatures/tracker_hosts.txt is stale; downloading from https://raw.githubusercontent.com/mitchellkrogza/The-Big-List-of-Hacked-Malware-Web-Sites/master/hosts"},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:17:45.683317Z","level":"INFO","fields":{"message":"Successfully updated local cache for config/signatures/tracker_hosts.txt"},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:17:45.700572Z","level":"INFO","fields":{"message":"Cache for config/signatures/tracker_hosts.txt is stale; downloading from https://raw.githubusercontent.com/AdAway/adaway.github.io/master/hosts.txt"},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:17:45.772303Z","level":"INFO","fields":{"message":"Successfully updated local cache for config/signatures/tracker_hosts.txt"},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:17:45.772592Z","level":"INFO","fields":{"message":"Malware protection is enabled. Loading malware lists."},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:17:45.772836Z","level":"INFO","fields":{"message":"Tracker protection is enabled. Loading tracker lists."},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:17:45.786513Z","level":"INFO","fields":{"message":"Total unique domains to block: 6545"},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:17:45.792108Z","level":"INFO","fields":{"message":"Hosts file updated successfully."},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:17:45.792439Z","level":"INFO","fields":{"message":"Flushing DNS cache..."},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:17:58.950058Z","level":"INFO","fields":{"message":"Settings updated and saved."},"target":"aiav_core::engine"}
+{"timestamp":"2025-06-27T17:17:58.950371Z","level":"INFO","fields":{"message":"Re-applying web protection with new settings..."},"target":"aiav_core::engine"}
+{"timestamp":"2025-06-27T17:17:58.950524Z","level":"INFO","fields":{"message":"Gathering and normalizing domains based on current settings..."},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:17:58.951241Z","level":"INFO","fields":{"message":"Cache for config/signatures/tracker_hosts.txt is stale; downloading from https://raw.githubusercontent.com/mitchellkrogza/The-Big-List-of-Hacked-Malware-Web-Sites/master/hosts"},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:17:59.033035Z","level":"INFO","fields":{"message":"Successfully updated local cache for config/signatures/tracker_hosts.txt"},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:17:59.047840Z","level":"INFO","fields":{"message":"Cache for config/signatures/tracker_hosts.txt is stale; downloading from https://raw.githubusercontent.com/AdAway/adaway.github.io/master/hosts.txt"},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:17:59.119711Z","level":"INFO","fields":{"message":"Successfully updated local cache for config/signatures/tracker_hosts.txt"},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:17:59.119935Z","level":"INFO","fields":{"message":"Malware protection is enabled. Loading malware lists."},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:17:59.120116Z","level":"INFO","fields":{"message":"Tracker protection is enabled. Loading tracker lists."},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:17:59.131871Z","level":"INFO","fields":{"message":"Total unique domains to block: 6545"},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:17:59.138891Z","level":"INFO","fields":{"message":"Hosts file updated successfully."},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:17:59.139170Z","level":"INFO","fields":{"message":"Flushing DNS cache..."},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:19:08.101251Z","level":"INFO","fields":{"message":"Settings updated and saved."},"target":"aiav_core::engine"}
+{"timestamp":"2025-06-27T17:19:08.101527Z","level":"INFO","fields":{"message":"Re-applying web protection with new settings..."},"target":"aiav_core::engine"}
+{"timestamp":"2025-06-27T17:19:08.101806Z","level":"INFO","fields":{"message":"Gathering and normalizing domains based on current settings..."},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:19:08.102238Z","level":"INFO","fields":{"message":"Cache for config/signatures/tracker_hosts.txt is stale; downloading from https://raw.githubusercontent.com/mitchellkrogza/The-Big-List-of-Hacked-Malware-Web-Sites/master/hosts"},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:19:08.437659Z","level":"INFO","fields":{"message":"Successfully updated local cache for config/signatures/tracker_hosts.txt"},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:19:08.450159Z","level":"INFO","fields":{"message":"Cache for config/signatures/tracker_hosts.txt is stale; downloading from https://raw.githubusercontent.com/AdAway/adaway.github.io/master/hosts.txt"},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:19:08.524429Z","level":"INFO","fields":{"message":"Successfully updated local cache for config/signatures/tracker_hosts.txt"},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:19:08.524730Z","level":"INFO","fields":{"message":"Total unique domains to block: 0"},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:19:08.524841Z","level":"INFO","fields":{"message":"Removing all custom blocks from hosts file."},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:19:08.540765Z","level":"INFO","fields":{"message":"Hosts file updated successfully."},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:19:08.552197Z","level":"INFO","fields":{"message":"Flushing DNS cache..."},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:19:25.569769Z","level":"INFO","fields":{"message":"Settings updated and saved."},"target":"aiav_core::engine"}
+{"timestamp":"2025-06-27T17:19:25.569917Z","level":"INFO","fields":{"message":"Re-applying web protection with new settings..."},"target":"aiav_core::engine"}
+{"timestamp":"2025-06-27T17:19:25.570126Z","level":"INFO","fields":{"message":"Gathering and normalizing domains based on current settings..."},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:19:25.570502Z","level":"INFO","fields":{"message":"Cache for config/signatures/tracker_hosts.txt is stale; downloading from https://raw.githubusercontent.com/mitchellkrogza/The-Big-List-of-Hacked-Malware-Web-Sites/master/hosts"},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:19:25.677258Z","level":"INFO","fields":{"message":"Successfully updated local cache for config/signatures/tracker_hosts.txt"},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:19:25.688049Z","level":"INFO","fields":{"message":"Cache for config/signatures/tracker_hosts.txt is stale; downloading from https://raw.githubusercontent.com/AdAway/adaway.github.io/master/hosts.txt"},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:19:25.759122Z","level":"INFO","fields":{"message":"Successfully updated local cache for config/signatures/tracker_hosts.txt"},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:19:25.759455Z","level":"INFO","fields":{"message":"Tracker protection is enabled. Loading tracker lists."},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:19:25.771199Z","level":"INFO","fields":{"message":"Total unique domains to block: 6542"},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:19:25.776483Z","level":"INFO","fields":{"message":"Hosts file updated successfully."},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:19:25.776815Z","level":"INFO","fields":{"message":"Flushing DNS cache..."},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:19:32.029290Z","level":"INFO","fields":{"message":"Settings updated and saved."},"target":"aiav_core::engine"}
+{"timestamp":"2025-06-27T17:19:32.029546Z","level":"INFO","fields":{"message":"Re-applying web protection with new settings..."},"target":"aiav_core::engine"}
+{"timestamp":"2025-06-27T17:19:32.029659Z","level":"INFO","fields":{"message":"Gathering and normalizing domains based on current settings..."},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:19:32.030428Z","level":"INFO","fields":{"message":"Cache for config/signatures/tracker_hosts.txt is stale; downloading from https://raw.githubusercontent.com/mitchellkrogza/The-Big-List-of-Hacked-Malware-Web-Sites/master/hosts"},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:19:32.129798Z","level":"INFO","fields":{"message":"Successfully updated local cache for config/signatures/tracker_hosts.txt"},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:19:32.148291Z","level":"INFO","fields":{"message":"Cache for config/signatures/tracker_hosts.txt is stale; downloading from https://raw.githubusercontent.com/AdAway/adaway.github.io/master/hosts.txt"},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:19:32.220138Z","level":"INFO","fields":{"message":"Successfully updated local cache for config/signatures/tracker_hosts.txt"},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:19:32.220382Z","level":"INFO","fields":{"message":"Malware protection is enabled. Loading malware lists."},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:19:32.220952Z","level":"INFO","fields":{"message":"Tracker protection is enabled. Loading tracker lists."},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:19:32.233911Z","level":"INFO","fields":{"message":"Total unique domains to block: 6544"},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:19:32.241012Z","level":"INFO","fields":{"message":"Hosts file updated successfully."},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:19:32.241405Z","level":"INFO","fields":{"message":"Flushing DNS cache..."},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:21:04.119478Z","level":"INFO","fields":{"message":"Quick scan request received via API."},"target":"aiav_core::api"}
+{"timestamp":"2025-06-27T17:21:04.120132Z","level":"INFO","fields":{"message":"⚡ Quick Scan initiated."},"target":"aiav_core::engine"}
+{"timestamp":"2025-06-27T17:21:04.120828Z","level":"WARN","fields":{"message":"Quick scan path does not exist or is not a directory: C:\\AIAV_Test\\TempA"},"target":"aiav_core::engine"}
+{"timestamp":"2025-06-27T17:21:04.121192Z","level":"WARN","fields":{"message":"Quick scan path does not exist or is not a directory: C:\\AIAV_Test\\TempB"},"target":"aiav_core::engine"}
+{"timestamp":"2025-06-27T17:21:04.121920Z","level":"INFO","fields":{"message":"⚡ Quick Scan finished."},"target":"aiav_core::engine"}
+{"timestamp":"2025-06-27T17:33:01.604389Z","level":"INFO","fields":{"message":"Settings updated and saved."},"target":"aiav_core::engine"}
+{"timestamp":"2025-06-27T17:33:01.604748Z","level":"INFO","fields":{"message":"Re-applying web protection with new settings..."},"target":"aiav_core::engine"}
+{"timestamp":"2025-06-27T17:33:01.604914Z","level":"INFO","fields":{"message":"Gathering and normalizing domains based on current settings..."},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:33:01.605467Z","level":"INFO","fields":{"message":"Cache for config/signatures/tracker_hosts.txt is stale; downloading from https://raw.githubusercontent.com/mitchellkrogza/The-Big-List-of-Hacked-Malware-Web-Sites/master/hosts"},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:33:02.019295Z","level":"INFO","fields":{"message":"Successfully updated local cache for config/signatures/tracker_hosts.txt"},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:33:02.027852Z","level":"INFO","fields":{"message":"Cache for config/signatures/tracker_hosts.txt is stale; downloading from https://raw.githubusercontent.com/AdAway/adaway.github.io/master/hosts.txt"},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:33:02.104999Z","level":"INFO","fields":{"message":"Successfully updated local cache for config/signatures/tracker_hosts.txt"},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:33:02.105467Z","level":"INFO","fields":{"message":"Total unique domains to block: 0"},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:33:02.105615Z","level":"INFO","fields":{"message":"Removing all custom blocks from hosts file."},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:33:02.108639Z","level":"INFO","fields":{"message":"Hosts file updated successfully."},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T17:33:02.108790Z","level":"INFO","fields":{"message":"Flushing DNS cache..."},"target":"aiav_core::detection::web_security"}
+{"timestamp":"2025-06-27T19:00:10.898662Z","level":"INFO","fields":{"message":"🔁 Starting comprehensive scan on directory: C:/Users/Asus/Downloads"},"target":"aiav_core::engine"}
+{"timestamp":"2025-06-27T19:00:10.899374Z","level":"INFO","fields":{"message":"Scan starting...","file":"C:/Users/Asus/Downloads\\node-v22.17.0-x64.msi"},"target":"aiav_core::engine"}
+{"timestamp":"2025-06-27T19:00:11.004092Z","level":"INFO","fields":{"message":"File not in signature DB. Forwarding to AI engine for deep analysis...","file":"C:/Users/Asus/Downloads\\node-v22.17.0-x64.msi"},"target":"aiav_core::engine::scanner"}
