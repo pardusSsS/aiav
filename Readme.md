@@ -543,15 +543,15 @@ cargo run --bin core-engine
 | 🔍 Loglama ve hata ayıklama çıktıları                           | ✅ Tamam | CLI üzerinden detaylı log çıktıları alınabiliyor (AI response, karantina path vs).                   |
 
 
-🧩 Eksik / Geliştirme Adayı Aşamalar
+🧩 AI-Antivirus Projesi Durum Tablosu
 | Aşama                                                 | Durum    | Önerilen Eylem                                                                                             |
 | ----------------------------------------------------- | -------- | ---------------------------------------------------------------------------------------------------------- |
-| 📊 Web dashboard veya GUI                             | ⏳ Eksik  | Web arayüz veya Tauri/GTK ile masaüstü uygulaması geliştirilebilir.                                        |
-| 🔧 `config/default.toml`'dan tüm ayarların yüklenmesi | ⏳ Kısmen | Şu anda `Settings` struct'ı kullanılıyor ama TOML üzerinden her parametre dinamik mi kontrol edilmeli?     |
-| 📜 Log dosyasına yazma                                | ⏳ Eksik  | Şu anda terminalde gösteriliyor. `log.txt` gibi bir dosyaya yazılabilir.                                   |
-| 📡 Sistem entegrasyonu (watcher + tray icon)          | ⏳ Eksik  | Dosya sistemi dinleyicisi (`notify`) aktif değil. Tray ile sistem entegrasyonu yapılabilir.                |
-| 🧪 Gerçek AI modeli ve özellik çıkarımı               | ⏳ Dummy  | Şu an `predictor.py` içinde `np.zeros((1,256))` kullanılıyor. Gerçek feature extraction ile desteklenmeli. |
-| 🔐 Karantina dosyalarını şifreleme veya imzalama      | ❌ Eksik  | Gelişmiş güvenlik için zip+AES veya PGP desteği eklenebilir.                                               |
+| 📊 Web dashboard veya GUI                             | ✅ Tamam  | Web arayüz veya Tauri/GTK ile masaüstü uygulaması geliştirilebilir.                                        |
+| 🔧 `config/default.toml`'dan tüm ayarların yüklenmesi | ✅ Tamam | Şu anda `Settings` struct'ı kullanılıyor ama TOML üzerinden her parametre dinamik mi kontrol edilmeli?     |
+| 📜 Log dosyasına yazma                                | ✅ Tamam  | Şu anda terminalde gösteriliyor. `log.txt` gibi bir dosyaya yazılabilir.                                   |
+| 📡 Sistem entegrasyonu (watcher + tray icon)          | ✅ Tamam  | Dosya sistemi dinleyicisi (`notify`) aktif değil. Tray ile sistem entegrasyonu yapılabilir.                |
+| 🧪 Gerçek AI modeli ve özellik çıkarımı               | ⏳ Kısmen  | Model Geliştirilmeli. |
+| 🔐 Karantina dosyalarını şifreleme veya imzalama      | ✅ Tamam | Gelişmiş güvenlik için zip+AES veya PGP desteği eklenebilir.                                               |
 
 
 
